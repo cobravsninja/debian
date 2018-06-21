@@ -2,7 +2,7 @@ FROM debian
 
 RUN apt-get update && apt-get -y upgrade && \
     apt-get -y -o APT::Install-Recommend=false -o APT::Install-Suggests=false install \
-    tcpdump netcat-traditional netcat-openbsd socat traceroute \ 
+    tcpdump netcat-traditional netcat-openbsd socat traceroute fio stress \ 
     iperf git ngrep nmap whois vim vim-common htop wget curl unzip screen openssh-client \
     net-tools hping3 dnsutils telnet less bash-completion \
     python-pip python3-virtualenv python-virtualenv python3 python3-pip \
